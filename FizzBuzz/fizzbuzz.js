@@ -11,10 +11,12 @@ class FizzBuzz {
     return output;
   }
   getFizzOrBuzz(n) {
-    if (n % 3 == 0) {
-      return this.fizz;
-    } else if (n % 5 == 0) {
-      return this.buzz;
+    if (n > 0) {
+      if (n % 3 == 0) {
+        return this.fizz;
+      } else if (n % 5 == 0) {
+        return this.buzz;
+      }
     }
     return n;
   }
